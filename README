@@ -1,0 +1,43 @@
+# 🧬 Permission Alchemy — A Permit.io x Glyph Tier Integration Demo
+
+This is a symbolic access control demo using **Permit.io's declarative permission logic** fused with our **3-tier glyph authorization system** from the Nibiru project.
+
+## 🔮 Tier Mapping
+
+| Permit Layer       | Mapped Glyph Tier         | Description                          |
+|--------------------|---------------------------|--------------------------------------|
+| `user.attributes`  | Tier 1 – Identity Tier     | Who they are                         |
+| `resource`         | Tier 2 – Object Tier       | What they’re accessing               |
+| `action`           | Tier 3 – Behavior Tier     | How and how often they’re interacting |
+
+This forms the basis of what we call **Permission Alchemy** — symbolic access enforcement at scale.
+
+## 🛠 Files & Features
+
+- `glyph.tsx`: Simulates glyph interaction with access control
+- `GlyphAccess.tsx`: Visual component for permission feedback
+- `permitCheck.ts`: Mocked Permit.io logic for local testing
+- `login.tsx`: Placeholder login to choose a test user tier
+
+## 🧪 Test Accounts
+
+| Username          | Tier | Outcome           |
+|-------------------|------|-------------------|
+| `user-123`        | 3    | ✅ Access Granted |
+| `user-guardian`   | 2    | ❌ Denied         |
+| `user-initiate`   | 1    | ❌ Denied         |
+
+## 🧩 Expandable Concepts
+
+- Visual permission threads (glyph-node overlay)
+- AI denial reasoning: “Insufficient Resonance”
+- Role templates: Artist, Guardian, Initiate
+- Pod/AI-based cross-permission layers
+
+## 🚀 Integration Ready
+
+This is a public-safe fragment of a larger system running inside the [Nibiru AI infrastructure](https://nibiru.site). All logic can be upgraded to call live `permit.check()` endpoints via Permit.io CLI or SDK.
+
+---
+
+> Built for the Permit.io Authorization Challenge — May 2025 ✨
