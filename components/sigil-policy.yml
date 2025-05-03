@@ -1,0 +1,19 @@
+# sigil-policy.yaml
+permissions:
+  - role: SYSTEM
+    resource: glyph.devcontrol
+    action: forge
+    condition:
+      tier: 3
+
+  - role: GUARDIAN
+    resource: glyph.devcontrol
+    action: view
+    condition:
+      tier: 2
+
+  - role: INITIATE
+    resource: glyph.devcontrol
+    action: view
+    condition:
+      tier: 1
